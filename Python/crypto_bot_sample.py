@@ -9,10 +9,9 @@ import json
 import requests
 
 async def main():
-    #apis= {"bybit": ["___KEY___", "___SECRET___"]}
+    apis= {"bybit": ["___KEY___", "___SECRET___"]}
 
-    #async with pybotters.Client(base_url="https://api.bybit.com", apis=apis) as client:
-    async with pybotters.Client(base_url="https://api.bybit.com") as client:
+    async with pybotters.Client(base_url="https://api.bybit.com", apis=apis) as client:
         store = pybotters.BybitUSDTDataStore()
 
         # initialize
