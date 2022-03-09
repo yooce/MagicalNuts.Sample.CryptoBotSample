@@ -4,11 +4,11 @@ namespace MagicalNuts.Sample.CryptoBotSample
 {
 	public class StrategyProvider<T> : IStrategyProvider where T : IStrategy, new()
 	{
-		private IStrategy? _Strategy = null;
-		private Controller? _Controller = null;
+		private IStrategy _Strategy = null;
+		private Controller _Controller = null;
 
-		public IStrategy? Strategy => _Strategy;
-		public Controller? Controller => _Controller;
+		public IStrategy Strategy => _Strategy;
+		public Controller Controller => _Controller;
 
 		public StrategyProvider()
 		{
