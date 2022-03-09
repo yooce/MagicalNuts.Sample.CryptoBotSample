@@ -18,7 +18,7 @@ namespace MagicalNuts.Sample.CryptoBotSample
 
 	public class DonchianChannelBreakOut : IStrategy
 	{
-		private DonchianChannelBreakOutProperties _Properties;
+		private DonchianChannelBreakOutProperties _Properties = null;
 
 		public DonchianChannelBreakOut()
 		{
